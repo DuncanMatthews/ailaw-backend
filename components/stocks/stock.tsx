@@ -50,7 +50,7 @@ export function Stock({ props: { symbol, price, delta } }: { props: Stock }) {
           'd LLL'
         )} and ${format(xToDate(endHighlight), 'd LLL, yyyy')}`
       }
-
+  
       if (aiState.messages[aiState.messages.length - 1]?.id === id) {
         setAIState({
           ...aiState,
@@ -63,7 +63,7 @@ export function Stock({ props: { symbol, price, delta } }: { props: Stock }) {
         })
       }
     }
-  }, [startHighlight, endHighlight])
+  }, [startHighlight, endHighlight, aiState, id, setAIState, xToDate])
 
   return (
     <div className="rounded-xl border bg-zinc-950 p-4 text-green-400">

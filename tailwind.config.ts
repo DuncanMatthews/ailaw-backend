@@ -5,6 +5,8 @@ module.exports = {
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
+    './app/**/.{ts,tsx}',
+
     './src/**/*.{ts,tsx}'
   ],
   prefix: '',
@@ -18,9 +20,13 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)']
+        sans: ['Roobert', 'Inter', 'system-ui'],
+        mono: ['Roobert', 'Inter', 'system-ui'],
       },
+      textColor: {
+        DEFAULT: 'var(--default-text-color)',
+      },
+
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
