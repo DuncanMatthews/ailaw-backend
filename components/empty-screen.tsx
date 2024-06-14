@@ -19,7 +19,7 @@ export function EmptyScreen() {
         <p className="text-lg text-gray-300">
           Discover a smarter way to navigate the legal landscape with AI Lawyer. Our cutting-edge platform combines advanced artificial intelligence with a vast database of legal cases to provide you with accurate and relevant legal information at your fingertips.
         </p>
-        <Button className="self-start">
+        <Button className="self-start bg-slate-400">
           Ask a Question
           <IconArrowRight className="ml-2" />
         </Button>

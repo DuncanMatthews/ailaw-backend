@@ -12,7 +12,7 @@ type EventsSkeletonProps = {
   events: Event[]
 }
 
-export const EventsSkeleton: React.FC<EventsSkeletonProps> = ({ events }) => {
+export const CasesComponent: React.FC<EventsSkeletonProps> = ({ events }) => {
   return (
     <div className="space-y-6 dark:bg-black dark:text-gray-100">
       {events.map(event => (
