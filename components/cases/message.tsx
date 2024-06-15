@@ -1,5 +1,4 @@
 'use client'
-
 import { IconOpenAI, IconUser } from '@/components/ui/icons'
 import { cn } from '@/lib/utils'
 import { spinner } from './spinner'
@@ -18,7 +17,7 @@ export function UserMessage({ children }: { children: React.ReactNode }) {
       <div className="flex size-[25px] shrink-0 select-none items-center justify-center rounded-md border bg-background shadow-sm">
         <IconUser />
       </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden pl-2">
+      <div className="ml-4 flex-1 space-y-2 overflow-hidden p-4 bg-blue-100 text-purple-900 rounded-md">
         {children}
       </div>
     </div>
@@ -35,11 +34,11 @@ export function BotMessage({
   const text = useStreamableText(content)
 
   return (
-    <div className={cn('group relative flex items-start md:-ml-12', className)}>
+    <div className={cn('group relative flex items-start dark-bg-[#1d1e23] md:-ml-12', className)}>
       <div className="flex size-[24px] shrink-0 select-none items-center justify-center rounded-md border bg-primary text-primary-foreground shadow-sm">
         <IconOpenAI />
       </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden px-1">
+      <div className="ml-4 flex-1 space-y-2 overflow-hidden bg-[#1d1e23] rounded-md p-4">
         <MemoizedReactMarkdown
           className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0"
           remarkPlugins={[remarkGfm, remarkMath]}
@@ -94,7 +93,7 @@ export function BotCard({
   showAvatar?: boolean
 }) {
   return (
-    <div className="group relative flex items-start md:-ml-12">
+    <div className="group relative flex items-start dark:bg-white md:-ml-12">
       <div
         className={cn(
           'flex size-[24px] shrink-0 select-none items-center justify-center rounded-md border bg-primary text-primary-foreground shadow-sm',
@@ -112,7 +111,7 @@ export function SystemMessage({ children }: { children: React.ReactNode }) {
   return (
     <div
       className={
-        'mt-2 flex items-center justify-center gap-2 text-xs text-gray-500'
+        'mt-2 flex items-center justify-center gap-2 dark:bg-panel text-xs text-gray-500'
       }
     >
       <div className={'max-w-[600px] flex-initial p-2'}>{children}</div>

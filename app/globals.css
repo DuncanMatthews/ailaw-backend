@@ -30,11 +30,14 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
+    --border: rgb(18, 17, 17);
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
  
     --radius: 0.5rem;
+    
+
+    
   }
  
   .dark {
@@ -62,8 +65,9 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
  
-    --border: 240 3.7% 15.9%;
+    --border: rgb(18, 17, 17);
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+    --panel: #1d1e23;
   }
 }
