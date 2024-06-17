@@ -165,14 +165,13 @@ async function submitUserMessage(content: string) {
     Context:
     ${context}
     
-    You and the user can discuss case details, and the user can request more information about the similar cases. Use the context to provide relevant information and assist the user in finding the most suitable case.
+    You and the user can discuss case details, and the user can request more information about the case. 
     
-   
-    
-    If the user requests details about a specific case respond with the information in the context.
-    If the user just wants a summary of a case, call \`show_case_summary\` to show the summary.
     If you want to show the list of similar cases, call \`list_cases\`.
-   If you want to search for cases, call \`list_cases\`.
+   
+    If you want to search for cases, call \`list_cases\`.
+
+    If you want to list a case call \`list_case\`.
 
     
     Important: Only provide information that is present in the context. If the information is not available in the context, respond with "There is no information available on this case." Do not generate or assume any information that is not explicitly provided in the context.
