@@ -17,7 +17,7 @@ export function UserMessage({ children }: { children: React.ReactNode }) {
       <div className="flex size-[25px] shrink-0 select-none items-center justify-center rounded-md border bg-background shadow-sm">
         <IconUser />
       </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden p-4 bg-blue-100 text-purple-900 rounded-md">
+      <div className="ml-4 text-xl flex-1 space-y-2 overflow-hidden p-4 bg-blue-100 text-gray-900 rounded-md">
         {children}
       </div>
     </div>

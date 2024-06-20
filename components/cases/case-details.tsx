@@ -30,25 +30,25 @@ const CaseDetails: React.FC<EventsSkeletonProps> = ({ events }: EventsSkeletonPr
             </span>
           </div>
           <div className="mb-4">
-            <h3 className="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">
               Summary
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">{event.summary}</p>
+            <p className="text-gray-600 text-xl dark:text-gray-300">{event.summary}</p>
           </div>
           <div className="mb-4">
-            <h3 className="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 text-xl font-semibold text-gray-700 dark:text-gray-200">
               Judgment
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">{event.judgment}</p>
+            <p className="text-gray-600 text-xl dark:text-gray-300">{event.judgment}</p>
           </div>
           <div className="mb-4">
-            <h3 className="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 text-xl font-semibold text-gray-700 dark:text-gray-200">
               Legal Issues
             </h3>
             <p className="text-gray-600 dark:text-gray-300">{event.legal_issues}</p>
           </div>
           <div>
-            <h3 className="mb-2 text-lg font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 text-xl font-semibold text-gray-700 dark:text-gray-200">
               Keywords
             </h3>
             <div className="flex flex-wrap gap-2">

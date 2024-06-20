@@ -63,7 +63,7 @@ async function findSimilarCases(embedding: number[]): Promise<any[]> {
       cases
   ORDER BY 
       cosine_similarity(embedding, ${vectorQuery}::float8[]) DESC
-  LIMIT 1
+  LIMIT 4 
 )
 SELECT 
   c.case_number,
@@ -172,6 +172,8 @@ async function submitUserMessage(content: string) {
     If you want to search for cases, call \`list_cases\`.
 
     If you want to list a case call \`list_case\`.
+
+    If a user asks for the trend , you can respond by analyzing the trend across all the cases in the context. 
 
     
     Important: Only provide information that is present in the context. If the information is not available in the context, respond with "There is no information available on this case." Do not generate or assume any information that is not explicitly provided in the context.
