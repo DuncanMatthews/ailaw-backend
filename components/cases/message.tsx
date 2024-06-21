@@ -17,7 +17,7 @@ export function UserMessage({ children }: { children: React.ReactNode }) {
       <div className="flex size-[25px] shrink-0 select-none items-center justify-center rounded-md border bg-background shadow-sm">
         <IconUser />
       </div>
-      <div className="ml-4 text-xl flex-1 space-y-2 overflow-hidden p-4 bg-blue-100 text-gray-900 rounded-md">
+      <div className="ml-4 text-sm md:text-xl flex-1 space-y-2 overflow-hidden p-4 bg-blue-100 text-gray-900 rounded-md">
         {children}
       </div>
     </div>
@@ -38,7 +38,7 @@ export function BotMessage({
       <div className="flex size-[24px] shrink-0 select-none items-center justify-center rounded-md border bg-primary text-primary-foreground shadow-sm">
         <IconOpenAI />
       </div>
-      <div className="ml-4 flex-1 space-y-2 overflow-hidden bg-[#1d1e23] rounded-md p-4">
+      <div className="ml-4 flex-1 space-y-2 overflow-hidden bg-white rounded-md p-4">
         <MemoizedReactMarkdown
           className="prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0"
           remarkPlugins={[remarkGfm, remarkMath]}

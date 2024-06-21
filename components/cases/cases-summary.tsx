@@ -27,10 +27,10 @@ export function CasesSummary({ props: cases }: { props: CaseSummary[] }) {
           }}
         >
           <div className="flex flex-col justify-center">
-            <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
+            <div className="md:text-xl font-bold text-gray-100 dark:text-gray-100">
               Case {caseSummary.case_number}
             </div>
-            <div className="mt-2 text-xl text-gray-600 dark:text-gray-300">
+            <div className="mt-2 text-xl text-gray-300 dark:text-gray-100">
               {caseSummary.summary.substring(0, 100)}...
             </div>
           </div>

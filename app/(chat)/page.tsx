@@ -16,8 +16,14 @@ export default async function IndexPage() {
   const session = (await auth()) as Session
   const missingKeys = await getMissingKeys()
 
+
+
   return (
-    <AI initialAIState={{ chatId: id, messages: [] }}>
+    <AI initialAIState={{
+      chatId: id,
+      messages: [],
+      currentCases: [] // Add this line
+    }}>
       <Chat id={id} session={session} missingKeys={missingKeys} />
     </AI>
   )

@@ -45,10 +45,10 @@ export function CaseComponent({ props: caseDetails }: { props: CaseDetails[] }) 
             <strong>Background:</strong> {detail.background}
           </div>
           <div className="text-zinc-500">
-            <strong>Plaintiff's Argument:</strong> {detail.plaintiffArgument}
+            <strong>Plaintiff&apos;s Argument:</strong> {detail.plaintiffArgument}
           </div>
           <div className="text-zinc-500">
-            <strong>Defendant's Argument:</strong> {detail.defendantArgument}
+            <strong>Defendant&apos;s Argument:</strong> {detail.defendantArgument}
           </div>
           <div className="text-zinc-500">
             <strong>Documents:</strong>

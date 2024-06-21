@@ -19,10 +19,10 @@ const CaseDetails: React.FC<EventsSkeletonProps> = ({ events }: EventsSkeletonPr
       {events.map((event) => (
         <div
           key={event.case_number}
-          className="rounded-lg border border-gray-300 bg-white p-6 shadow-md dark:border-gray-700 dark:bg-[#121111]"
+          className="rounded-lg border border-gray-300 bg-[#1d1e23] p-6 shadow-md dark:border-gray-700 dark:bg-[#121111]"
         >
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+            <h2 className="md:text-xl font-bold text-gray-100 dark:text-gray-100">
               Case Number: {event.case_number}
             </h2>
             <span className="rounded-full bg-[#6905e9] px-3 py-1 text-sm font-semibold text-white">
@@ -30,25 +30,25 @@ const CaseDetails: React.FC<EventsSkeletonProps> = ({ events }: EventsSkeletonPr
             </span>
           </div>
           <div className="mb-4">
-            <h3 className="mb-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 md:text-2xl font-semibold text-gray-200 dark:text-gray-200">
               Summary
             </h3>
-            <p className="text-gray-600 text-xl dark:text-gray-300">{event.summary}</p>
+            <p className="text-gray-300 md:text-xl text-sm dark:text-gray-300">{event.summary}</p>
           </div>
           <div className="mb-4">
-            <h3 className="mb-2 text-xl font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 md:text-xl font-semibold text-gray-200 dark:text-gray-200">
               Judgment
             </h3>
-            <p className="text-gray-600 text-xl dark:text-gray-300">{event.judgment}</p>
+            <p className="text-gray-300 md:text-xl text-sm dark:text-gray-300">{event.judgment}</p>
           </div>
           <div className="mb-4">
-            <h3 className="mb-2 text-xl font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 md:text-xl font-semibold text-gray-200 dark:text-gray-200">
               Legal Issues
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">{event.legal_issues}</p>
+            <p className="text-gray-300 dark:text-gray-100">{event.legal_issues}</p>
           </div>
           <div>
-            <h3 className="mb-2 text-xl font-semibold text-gray-700 dark:text-gray-200">
+            <h3 className="mb-2 md:text-xl font-semibold text-gray-200 dark:text-gray-200">
               Keywords
             </h3>
             <div className="flex flex-wrap gap-2">

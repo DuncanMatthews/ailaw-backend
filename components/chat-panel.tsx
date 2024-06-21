@@ -69,7 +69,7 @@ export function ChatPanel({
             exampleMessages.map((example, index) => (
               <div
                 key={example.heading}
-                className={`cursor-pointer rounded-lg border bg-zinc-500 p-4 hover:bg-zinc-50 dark:bg-[#1d1e23] dark:hover:bg-zinc-900 ${
+                className={`cursor-pointer rounded-lg border bg-zinc-500 p-4 hover:bg-zinc-400 dark:bg-[#1d1e23] dark:hover:bg-zinc-900 ${
                   index > 1 && 'hidden md:block'
                 }`}
                 onClick={async () => {
