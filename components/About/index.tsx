@@ -72,11 +72,11 @@ const About = () => {
                 </span>
               </h2>
               <p>
-              Leverage AI Lawyer's advanced contextual analysis to understand how legal principles apply to your case, build compelling arguments, and anticipate counterarguments effectively.
+              Leverage AI Lawyer&apos;s advanced contextual analysis to understand how legal principles apply to your case, build compelling arguments, and anticipate counterarguments effectively.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                <div className="flex size-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
                   <p className="text-metatitle2 font-semibold text-black dark:text-white">
                     01
                   </p>
@@ -92,7 +92,7 @@ const About = () => {
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                <div className="flex size-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
                   <p className="text-metatitle2 font-semibold text-black dark:text-white">
                     02
                   </p>

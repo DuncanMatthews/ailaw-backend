@@ -7,6 +7,7 @@ import SharePost from "@/components/Blog/SharePost";
 import { Metadata } from "next";
 import Image from "next/image";
 import BlogData from "@/components/Blog/blogData";
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLikeOfReactNode, Key } from 'react';
 
 // export const metadata: Metadata = {
 //   title: "Blog Details Page - Ai Lawyer SaaS Boilerplate",
@@ -87,7 +88,7 @@ const SingleBlogPage =  () => {
                   </div>
 
                 <div className="blog-details">
-                  {post.body?.split("\n").map((paragraph, index) => (
+                  {post.body?.split("\n").map((paragraph: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined, index: Key | null | undefined) => (
                     <p key={index} className="mb-4">
                       {paragraph}
                     </p>
