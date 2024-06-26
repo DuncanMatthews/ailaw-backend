@@ -7,6 +7,7 @@ import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   metadataBase: process.env.VERCEL_URL
@@ -38,6 +39,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
+        <GoogleTagManager gtmId="GTM-M75M64VD" />
       <body
         className={cn(
           'font-sans antialiased',
