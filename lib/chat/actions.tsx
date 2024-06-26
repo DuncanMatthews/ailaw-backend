@@ -191,6 +191,8 @@ async function submitUserMessage(content: string) {
       }))
     ],
 
+  
+
     text: ({ content, done, delta }) => {
       if (!textStream) {
         textStream = createStreamableValue('')
@@ -296,6 +298,7 @@ async function submitUserMessage(content: string) {
     display: result.value
   }
 }
+
 
 type AIState = {
   chatId: string;
