@@ -1,11 +1,12 @@
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { Analytics } from "@vercel/analytics/react"
 
 import '@/app/globals.css'
 import { cn } from '@/lib/utils'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { Providers } from '@/components/providers'
-import  Header  from '@/components/header'
+import  HeaderComp  from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
 import { GoogleTagManager } from '@next/third-parties/google'
 
@@ -38,8 +39,10 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
+    
     <html lang="en" suppressHydrationWarning>
         <GoogleTagManager gtmId="GTM-M75M64VD" />
+        <Analytics />
       <body
         className={cn(
           'font-sans antialiased',
@@ -55,7 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <div className="">
-            <Header />
+            <HeaderComp />
             <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
           </div>
           <TailwindIndicator />

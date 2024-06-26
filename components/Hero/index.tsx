@@ -45,9 +45,8 @@ const Hero = () => {
   height="315" 
   src="https://www.youtube.com/embed/bCHvPjSP3rQ?si=JMpyhmuQLrqsUYc2&rel=0&modestbranding=1" 
   title="YouTube video player" 
-  frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" 
+  referrerPolicy="strict-origin-when-cross-origin" 
 ></iframe>
             </div>
           </div>

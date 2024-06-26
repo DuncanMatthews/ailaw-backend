@@ -41,7 +41,7 @@ async function UserOrLogin() {
   )
 }
 
-export default async function Header() {
+export default async function HeaderComp() {
   const session = (await auth()) as Session
 
   return (
