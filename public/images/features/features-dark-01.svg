@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 562 366">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #1d1e23;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-1" d="m20,43c0-4.42,3.58-8,8-8h506c4.42,0,8,3.58,8,8v295c0,4.42-3.58,8-8,8H28c-4.42,0-8-3.58-8-8V43Z"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect class="cls-3" width="562" height="366" rx="10" ry="10"/>
+    <path class="cls-1" d="m40,62c0-3.87,3.13-7,7-7h468c3.87,0,7,3.13,7,7v284H40V62Z"/>
+    <g class="cls-2">
+      <image width="3456" height="1806" transform="translate(-93.75 15.45) scale(.19)" xlink:href="../../../../../../../../../../../../Users/duncan/Desktop/Screenshot 2024-06-18 at 6.20.09 PM.png"/>
+    </g>
+  </g>
+</svg>

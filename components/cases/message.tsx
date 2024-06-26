@@ -44,7 +44,7 @@ export function BotMessage({
           remarkPlugins={[remarkGfm, remarkMath]}
           components={{
             p({ children }) {
-              return <p className="mb-2 last:mb-0">{children}</p>
+              return <p className="text-black mb-2 last:mb-0">{children}</p>
             },
             code({ node, inline, className, children, ...props }) {
               if (children.length) {
